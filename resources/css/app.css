@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .card-border::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: linear-gradient(138deg, rgba(16, 167, 232, 0.29) 0%, rgba(85, 11, 131, 0.29) 50%, rgba(41, 49, 53, 0.29) 100%) border-box;
+    -webkit-mask: linear-gradient(138deg, rgba(16, 167, 232, 0.29) 0%, rgba(85, 11, 131, 0.29) 50%, rgba(41, 49, 53, 0.29) 100%);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-clip: border-box;
+  }
+
+
