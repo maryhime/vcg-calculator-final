@@ -33,9 +33,9 @@ const CalculatorPage = () => {
     };
 
     return (
-        <div className=" 3xl:h-screen 3xl:justify-center flex w-full flex-col items-center bg-[#0C0C18] px-24 py-24 xl:py-[100px]">
-            <div className="3xl:w-full flex w-full flex-col items-center justify-center gap-48 xl:w-[1120px]">
-                <Card className="card-border 3xl:w-[1600px]  flex w-full flex-col gap-16 rounded-10 bg-gradient-card p-24 backdrop-blur-[10px] xl:w-[1120px] xl:gap-24 xl:p-48">
+        <>
+            <div className="flex w-full flex-col items-center justify-center gap-48 xl:w-[1120px] 3xl:w-full">
+                <Card className="card-border flex  w-full flex-col gap-16 rounded-10 bg-gradient-card p-24 backdrop-blur-[10px] xl:w-[1120px] xl:gap-24 xl:p-48 3xl:w-[1600px]">
                     <TableHeader tableRows={tableRows}>
                         <div className="flex items-center justify-between gap-8 sm:flex-row">
                             <Button
@@ -48,14 +48,14 @@ const CalculatorPage = () => {
                             >
                                 <Icon
                                     icon="solar:trash-bin-minimalistic-bold-duotone"
-                                    className="3xl:w-9 3xl:h-9 h-6 w-6"
+                                    className="h-6 w-6 3xl:h-9 3xl:w-9"
                                 />
-                                <span className="3xl:text-[24px] m-0 hidden h-fit p-0 leading-none md:block">
+                                <span className="m-0 hidden h-fit p-0 leading-none md:block 3xl:text-[24px]">
                                     Clear Table
                                 </span>
                             </Button>
                             <Button
-                                className="3xl:!h-[66px] 3xl:!min-w-[230px] flex items-center gap-3 capitalize"
+                                className="flex items-center gap-3 capitalize 3xl:!h-[66px] 3xl:!min-w-[230px]"
                                 size="md"
                                 color="blue"
                                 variant="gradient"
@@ -66,9 +66,9 @@ const CalculatorPage = () => {
                             >
                                 <Icon
                                     icon="solar:user-plus-rounded-bold-duotone"
-                                    className="3xl:w-9 3xl:h-9 h-6 w-6"
+                                    className="h-6 w-6 3xl:h-9 3xl:w-9"
                                 />
-                                <span className="3xl:text-[24px] m-0 hidden h-fit p-0 leading-none md:block">
+                                <span className="m-0 hidden h-fit p-0 leading-none md:block 3xl:text-[24px]">
                                     Add Roles
                                 </span>
                             </Button>
@@ -107,7 +107,7 @@ const CalculatorPage = () => {
                 tableRows={tableRows}
                 total={result}
             />
-        </div>
+        </>
     );
 };
 
